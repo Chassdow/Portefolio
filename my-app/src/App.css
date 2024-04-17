@@ -1,0 +1,179 @@
+* {
+  font-family: Courier New, monospace;
+
+}
+
+.titreR {
+  text-align: center;
+}
+
+.titre {
+  color: rgba(238, 238, 236, 255);
+  text-align: center;
+}
+
+.Logo {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerHeader {
+  font-size: 25px;
+  background-image: url('img/headerwallpaper.png');
+  background-size: cover;
+  width: auto;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.headertest {
+
+  width: 50%;
+  height: 50%;
+  display: flex;
+  text-wrap: wrap;
+}
+
+.projettextHeader {
+  border-radius: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  height: auto;
+
+}
+
+.projectLimg {
+  width: 35%;
+  height: 35%;
+  border-radius: 30px;
+  float: right;
+
+}
+
+.projetRimg {
+  width: 35%;
+  height: 35%;
+  border-radius: 30px;
+  float: left;
+
+}
+
+
+
+.containerL {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.containerR {
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 30px;
+  float: right;
+}
+
+.NavbarContainer {
+  border-radius: 30px;
+  background: transparent;
+  background-color: transparent;
+  position: fixed;
+}
+
+.Navbar li {
+  list-style-type: none;
+  margin-left: 35px;
+  float: left;
+}
+
+.InfoPrems {
+  margin-left: 45%;
+  width: 150px;
+  margin-top: 5%;
+  color: rgba(238, 238, 236, 255);
+
+}
+
+.logoO {
+  padding-left: 5%;
+  width: 5%;
+  height: auto;
+}
+
+.containerinfo {
+  background-attachment: fixed;
+  background-image: url(img/work_in_progress-wallpaper-1440x900.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
+.backgroundimgprojet {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgba(238, 238, 236, 255)
+}
+
+.Citation {
+  font-size: 160%;
+  color: rgba(238, 238, 236, 255);
+}
+
+.containerCitation {
+  padding-top: 4%;
+  background-attachment: fixed;
+  background-image: url(./img/work_in_progress-wallpaper-1440x900.jpg);
+  justify-content: center;
+  background-size: cover;
+  display: flex;
+  height: 150px;
+
+}
+
+.ContainerContact {
+  background-image: url(img/headerwallpaper\ \(copy\).png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Contacth1 {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 50px;
+}
+
+.FormContact {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  padding-top: 5%;
+  justify-content: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}

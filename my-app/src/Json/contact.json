@@ -1,0 +1,11 @@
+{
+    "nommer": {
+        "Titre": "CONTACTER-MOI",
+        "Nom": "Nom",
+        "Prénom": "Prenom",
+        "Email": "Email",
+        "Téléphone": "Téléphone",
+        "Objet": "Objet",
+        "Message": "Message"
+    }
+}

@@ -1,0 +1,45 @@
+import React from "react";
+import '../../src/App.css'
+
+function Contact({ }) {
+    return (
+        <div className="ContainerContact">
+            <h1 className="Contacth1">Contacter moi</h1>
+            <div className="FormContact">
+            <form action="https://submit-form.com/IaTWdqwd7">
+                <div className="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required="" />
+                </div>
+                <div className="form">
+                <label for="numero">Numéro de téléphone</label>
+                <input type="tel" id="numero" name="numero" placeholder="numero" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" required />
+                </div>
+                <div className="form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required="@" />
+                </div>
+                <div className="form">
+                <label for="message">Message</label>
+                <input
+                    type="hidden"
+                    name="_redirect"
+                    value="localhost:3000" />
+                <textarea
+                row = "4"
+                cols = "50  "
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    required=""
+                ></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            </div>
+        </div>
+
+
+    )
+}
+export default Contact
