@@ -1,25 +1,22 @@
 import React from "react";
 import '../../src/App.css'
 
-function navbar({}) {
-    return (  
-            <div className="NavbarContainer">
-                
-                <ul className="Navbar">
+function navbar({ }) {
+    return (
+        <div className="NavbarContainer">
+
+            <ul className="Navbar">
                 <li>
-                    <a href="moi">Mes info</a>
+                    <a href="moi">Mes info, ㅤㅤ</a>
                 </li>
                 <li>
-                    <a href="#projet1">premier projet</a>
+                    <a href="#projet1"> Mes Projet, ㅤㅤ</a>
                 </li>
                 <li>
-                    <a href="#projet2">deuxième projet</a>
+                    <a href="#contact">Me Contacter. ㅤㅤ</a>
                 </li>
-                <li>
-                    <a href="#projet3"> troisième projet</a>
-                </li>
-                </ul>
-            </div>
+            </ul>
+        </div>
     )
 }
 export default navbar

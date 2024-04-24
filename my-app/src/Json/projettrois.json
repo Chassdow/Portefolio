@@ -1,7 +1,6 @@
 {
     "nommer": {
         "title": "Spotify",
-        "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lectus justo. Vestibulum sit amet bibendum tellus, rutrum ornare lectus. Nunc tristique ultrices elit et pharetra. Fusce vel justo eu ligula pulvinar congue. Aenean eget sem sit amet odio dignissim fringilla. Vivamus eget libero ex. Quisque ultrices justo eros, ut maximus purus finibus sed. Donec in volutpat orci, eu congue augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lectus justo. Vestibulum sit amet bibendum tellus, rutrum ornare lectus. Nunc tristique ultrices elit et pharetra. Fusce vel justo eu ligula pulvinar congue. Aenean eget sem sit amet odio dignissim fringilla. Vivamus eget libero ex. Quisque ultrices justo eros, ut maximus purus finibus sed. Donec in volutpat orci, eu congue augue."
-
-    }
+        "p": "Cette première expérience en JavaScript, menée en groupe sur un week-end, nous a plongés dans l'algorithmie tout en nous confrontant au défi ambitieux de créer notre propre plateforme de streaming musical inspirée de Spotify en utilisant React."
+      }
 }

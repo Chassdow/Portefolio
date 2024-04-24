@@ -20,9 +20,10 @@ import '../../src/App.css'
 
 function Information({ Information }) {
     return (
-
+        
         <div className="containerinfo">
             <h1 className="titre">{Information.title}</h1>
+            <div className="containerlogo">
             <div className="Logo">
                 <img id="Html" className="logoO"
                     src={Html}
@@ -43,7 +44,9 @@ function Information({ Information }) {
                     src={Mysql}
                 />
             </div>
+            </div>
         </div>
+        
 
 
     )
