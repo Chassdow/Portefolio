@@ -39,7 +39,7 @@ function Contact({ }) {
                             <input
                                 type="hidden"
                                 name="_redirect"
-                                // value="felix-roland-portfolio.netlify.app"
+                                value="felix-roland.netlify.app"
                                  />
                             <textarea
                                 row="4"
