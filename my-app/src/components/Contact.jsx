@@ -17,7 +17,7 @@ function Contact({ }) {
                         <a className="Zoom" href="https://www.linkedin.com/in/felix-roland-2726052a8/" target="blank"><img src={linkedin} alt="" /></a>
                     </div>
                     <div className="CV">
-                        <a className="" href="felix.roland.pdf"><img src={cv} alt="" width={100} height={100}/></a>
+                        <a className="Zoom" href="/felix.roland.pdf" download="" type="application/pdf"><img src={cv} alt="" width={100} height={100}/></a>
                     </div>
                 </div>
                 <div className="FormContact">
@@ -39,7 +39,8 @@ function Contact({ }) {
                             <input
                                 type="hidden"
                                 name="_redirect"
-                                value="felix-roland-portfolio.netlify.app" />
+                                // value="felix-roland-portfolio.netlify.app"
+                                 />
                             <textarea
                                 row="4"
                                 cols="35"
