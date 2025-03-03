@@ -32,7 +32,7 @@ export default function EasterEgg() {
 
                 setTimeout(() => {
                     setShowImage(false);
-                }, 99900);
+                }, 500);
 
                 pressedKeys = [];
             }
