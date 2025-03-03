@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import "../styles/globals.css";
+// import "../styles/globals.css";
 
 export default function DarkModeToggle() {
   const [darkMode, setDarkMode] = useState(null);

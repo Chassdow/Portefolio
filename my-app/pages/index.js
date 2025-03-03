@@ -5,7 +5,7 @@ import Introduction from "../components/Introduction";
 import GitHubRepos from "../components/GitHubRepos";
 import SkillsSection from "../components/SkillsSection";
 import Footer from "../components/Footer";
-
+// import '../styles/globals.css';
 
 export default function Home() {
   const [repos, setRepos] = useState([]);
