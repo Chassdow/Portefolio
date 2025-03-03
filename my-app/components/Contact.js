@@ -133,7 +133,7 @@ export default function Contact() {
 
                     <div className="flex justify-center">
                         <ReCAPTCHA
-                            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // Clé de test
+                            sitekey="6LcECugqAAAAAEHkSwRRQJeVhNEpjs3BpVQUbC2r"
                             onChange={handleCaptchaChange}
                         />
                     </div>

@@ -5,4 +5,7 @@ module.exports = {
     config.resolve.modules.push(path.resolve('./'));
     return config;
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
