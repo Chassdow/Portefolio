@@ -9,6 +9,8 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   const [repos, setRepos] = useState([]);
+  console.log("Clé reCAPTCHA : ", process.env.REACT_APP_RECAPTCHA_SITE_KEY);
+  console.log("Test : le composant est bien rendu !");
 
   useEffect(() => {
     async function fetchRepos() {

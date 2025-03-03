@@ -1,5 +1,4 @@
-import React from "react";
-// import "../styles/globals.css";
+import React from "react"
 export default function SkillsSection() {
   return (
     <section className="text-center py-12">

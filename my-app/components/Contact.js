@@ -10,15 +10,16 @@ export default function Contact() {
     });
 
     const [errorMessage, setErrorMessage] = useState("");
-    const [captchaValue, setCaptchaValue] = useState(null); 
+    const [captchaValue, setCaptchaValue] = useState(null);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
     };
 
     const handleCaptchaChange = (value) => {
-        setCaptchaValue(value); 
+        setCaptchaValue(value);
     };
+    console.log("Clé reCAPTCHA : ", process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -29,46 +30,46 @@ export default function Contact() {
         }
 
         emailjs.send(
-            "service_gmail",
-            "template_send",
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_SEND_ID,
             {
                 user_email: formData.email,
                 subject: formData.subject,
                 message: formData.message,
             },
-            "X_3b6VaZk4dJI5opW"
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
-        .then((response) => {
-            console.log("Message envoyé avec succès !", response.status, response.text);
+            .then((response) => {
+                console.log("Message envoyé avec succès !", response.status, response.text);
 
-            emailjs.send(
-                "service_gmail",
-                "template_reply",
-                {
-                    user_email: formData.email,
-                    subject: formData.subject,
-                    message: formData.message,
-                },
-                "X_3b6VaZk4dJI5opW"
-            )
-            .then(() => {
-                alert("Message envoyé avec succès ! Un email de confirmation a été envoyé. N'oubliez pas de vérifier vos spams !");
+                emailjs.send(
+                    process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                    process.env.REACT_APP_EMAILJS_TEMPLATE_REPLY_ID,
+                    {
+                        user_email: formData.email,
+                        subject: formData.subject,
+                        message: formData.message,
+                    },
+                    process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+                )
+                    .then(() => {
+                        alert("Message envoyé avec succès ! Un email de confirmation a été envoyé. N'oubliez pas de vérifier vos spams !");
+                    })
+                    .catch((error) => {
+                        console.error("Erreur lors de l'envoi du mail de confirmation:", error);
+                        alert("Message envoyé, mais impossible d'envoyer la confirmation.");
+                    });
+
+                setErrorMessage("");
+                setCaptchaValue(null);
             })
             .catch((error) => {
-                console.error("Erreur lors de l'envoi du mail de confirmation:", error);
-                alert("Message envoyé, mais impossible d'envoyer la confirmation.");
+                console.error("Échec de l'envoi du message:", error);
+                setErrorMessage(
+                    "😔 Désolé, le service de contact est hors service. Je mets tout en œuvre pour réparer ceci. " +
+                    "En attendant, n'hésitez pas à me contacter directement par mail : felix.roland@epitech.eu"
+                );
             });
-
-            setErrorMessage(""); 
-            setCaptchaValue(null);
-        })
-        .catch((error) => {
-            console.error("Échec de l'envoi du message:", error);
-            setErrorMessage(
-                "😔 Désolé, le service de contact est hors service. Je mets tout en œuvre pour réparer ceci. " +
-                "En attendant, n'hésitez pas à me contacter directement par mail : felix.roland@epitech.eu"
-            );
-        });
 
         setFormData({
             email: "",
@@ -133,9 +134,10 @@ export default function Contact() {
 
                     <div className="flex justify-center">
                         <ReCAPTCHA
-                            sitekey="6LcECugqAAAAAEHkSwRRQJeVhNEpjs3BpVQUbC2r"
+                            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                             onChange={handleCaptchaChange}
                         />
+
                     </div>
 
                     <button
@@ -149,7 +151,6 @@ export default function Contact() {
         </section>
     );
 }
-
 
 
 
