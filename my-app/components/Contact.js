@@ -19,8 +19,6 @@ export default function Contact() {
     const handleCaptchaChange = (value) => {
         setCaptchaValue(value);
     };
-    console.log("Clé reCAPTCHA : ", process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY);
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -40,8 +38,7 @@ export default function Contact() {
             process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
             .then((response) => {
-                console.log("Message envoyé avec succès !", response.status, response.text);
-
+        
                 emailjs.send(
                     process.env.REACT_APP_EMAILJS_SERVICE_ID,
                     process.env.REACT_APP_EMAILJS_TEMPLATE_REPLY_ID,
