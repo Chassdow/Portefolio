@@ -30,13 +30,20 @@ export default function DarkModeToggle() {
 
   if (darkMode === null) return null;
 
+  const iconSize = 24;
+
   return (
     <button
       onClick={() => setDarkMode((prev) => !prev)}
-      className="fixed top-4 right-4 p-2 bg-gray-200 dark:bg-gray-800 rounded-full shadow-md"
+      className="p-2 bg-gray-200 dark:bg-gray-800 rounded-full shadow-md w-10 h-10 flex items-center justify-center" // On retire top-4 et right-4
     >
-      {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon className="text-gray-900" />}
+      {darkMode ? (
+        <FaSun className="text-yellow-400" size={iconSize} />
+      ) : (
+        <FaMoon className="text-gray-900" size={iconSize} />
+      )}
     </button>
   );
 }
+
 

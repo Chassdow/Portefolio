@@ -22,7 +22,7 @@ export default function GitHubRepos({ repos }) {
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-600 dark:text-gray-400">Aucun dépôt disponible.</p>
+          <p className="text-center text-gray-600 dark:text-gray-400">Aucun repos disponible.</p>
         )}
       </div>
     </section>
