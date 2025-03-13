@@ -5,6 +5,7 @@ import Introduction from "../components/Introduction";
 import GitHubRepos from "../components/GitHubRepos";
 import SkillsSection from "../components/SkillsSection";
 import Footer from "../components/Footer";
+import Apropos from "../components/Apropos";
 
 export default function Home() {
   const [repos, setRepos] = useState([]);
@@ -38,6 +39,7 @@ export default function Home() {
       <Header />
       <div className="container mx-auto px-6 py-12">
         <Introduction />
+        <Apropos />
         <GitHubRepos repos={repos} />
         <SkillsSection />
       </div>
