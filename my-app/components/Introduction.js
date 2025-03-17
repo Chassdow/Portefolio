@@ -41,18 +41,18 @@ export default function Introduction() {
 
     return (
         <section className="py-16 relative">
-            <div className="max-w-4xl mx-auto text-center">
-                <div className="mb-8">
-                    <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-transparent bg-clip-text">
+            <div className="max-w-4xl mx-auto text-center animate-fade-in">
+                <div className="mb-8 animate-slide-up">
+                    <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-transparent bg-clip-text hover:scale-105 transition-transform">
                         Felix Roland
                     </h1>
                     <p className="text-2xl text-gray-600 dark:text-gray-400 mb-6">
                         Développeur Fullstack
                     </p>
-                    <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto rounded-full"></div>
+                    <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto rounded-full animate-pulse"></div>
                 </div>
 
-                <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed animate-fade-in-up">
                     Passionné par la création d'expériences web innovantes et performantes.
                     Je transforme des idées en solutions digitales élégantes.
                 </p>

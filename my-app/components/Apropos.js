@@ -3,12 +3,12 @@ import React from "react";
 export default function Apropos() {
   const parcours = [
     {
-      periode: "2020 - Présent",
+      periode: "Présent",
       titre: "Développeur Fullstack",
       description: "Spécialisé dans le développement d'applications web modernes"
     },
     {
-      periode: "2018 - 2020",
+      periode: "2023 - 2025",
       titre: "Formation Développement Web",
       description: "Formation intensive en développement web et mobile"
     }
@@ -61,7 +61,6 @@ export default function Apropos() {
           </div>
         </div>
 
-        {/* Valeurs et Approche */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-6 text-center">Mes Valeurs</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -75,7 +74,6 @@ export default function Apropos() {
           </div>
         </div>
 
-        {/* Objectifs */}
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-lg shadow-md">
           <h3 className="text-2xl font-semibold mb-4 text-center">Objectifs Professionnels</h3>
           <p className="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto">
